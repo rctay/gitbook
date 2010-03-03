@@ -80,8 +80,7 @@ gives you an opportunity to add files that you forgot to add or
 correct typos in a commit message, prior to pushing the change
 out for the world to see.
 
-If you find a mistake in an older commit, but still one that you
-have not yet published to the world, you use linkgit:git-rebase[1]
+If you wish to modify an earlier commit, you can use linkgit:git-rebase[1]
 in interactive mode with `git rebase -i`, marking the change
 that requires correction with **edit**.  This will allow you
 to amend the commit during the rebasing process.
