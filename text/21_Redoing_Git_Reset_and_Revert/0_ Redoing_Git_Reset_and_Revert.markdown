@@ -40,7 +40,7 @@ If you make a commit that you later wish you hadn't, there are two
 fundamentally different ways to fix the problem:
 
 1. You can create a new commit that undoes whatever was done
-    by the old commit.  This is the correct thing if your
+    by the unwanted commit.  This is the correct thing if your
     mistake has already been made public.
 
 2. You can go back and modify the old commit.  You should
