@@ -60,7 +60,8 @@ commit; for example, to revert the most recent commit:
 This will create a new commit which undoes the change in HEAD.  You
 will be given a chance to edit the commit message for the new commit.
 
-You can also revert an earlier change, for example, the next-to-last:
+You can also revert an earlier change; for example, to revert the
+next-to-last commit:
 
     $ git revert HEAD^
 
