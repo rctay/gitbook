@@ -15,7 +15,7 @@ state with
 
 This will throw away any changes you may have added to the git index
 and as well as any outstanding changes you have in your working tree.
-In other words, it causes the results of "git diff" and "git diff --cached"
+In other words, it causes the results of `git diff` and `git diff --cached`
 to both be empty.
 
 If you just want to restore just one file, say your hello.rb, use
@@ -25,13 +25,13 @@ To restore hello.rb to the version in the index:
 
     $ git checkout -- hello.rb
 
-This way, "git diff hello.rb" returns no differences.
+This way, `git diff hello.rb` returns no differences.
 
 To restore hello.rb to the version in the HEAD revision:
 
     $ git checkout HEAD hello.rb
 
-both "git diff hello.rb" and "git diff --cached hello.rb" return no
+both `git diff hello.rb` and `git diff --cached hello.rb` return no
 differences.
 
 ### Fixing committed mistakes ###
@@ -72,7 +72,7 @@ conflicts manually, just as in the case of resolving a merge.
 #### Fixing a mistake by modifying a commit ####
 
 If you have just committed something but realize you need to fix
-up that commit, recent versions of linkgit:git-commit[1] support an 
+up that commit, recent versions of linkgit:git-commit[1] support an
 **--amend** flag which instructs git to replace the HEAD commit
 with a new one, based on the current contents of the index.  This
 gives you an opportunity to add files that you forgot to add or
@@ -81,6 +81,6 @@ out for the world to see.
 
 If you find a mistake in an older commit, but still one that you
 have not yet published to the world, you use linkgit:git-rebase[1]
-in interactive mode, with "git rebase -i" marking the change
+in interactive mode, with `git rebase -i` marking the change
 that requires correction with **edit**.  This will allow you
 to amend the commit during the rebasing process.
