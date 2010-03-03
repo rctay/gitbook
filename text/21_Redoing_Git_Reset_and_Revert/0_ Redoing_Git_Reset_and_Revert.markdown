@@ -82,6 +82,6 @@ out for the world to see.
 
 If you find a mistake in an older commit, but still one that you
 have not yet published to the world, you use linkgit:git-rebase[1]
-in interactive mode, with `git rebase -i` marking the change
+in interactive mode with `git rebase -i`, marking the change
 that requires correction with **edit**.  This will allow you
 to amend the commit during the rebasing process.
