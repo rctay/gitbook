@@ -74,7 +74,7 @@ conflicts manually, just as in the case of resolving a merge.
 
 If you have just committed something but realize you need to fix
 up that commit, recent versions of linkgit:git-commit[1] supports the
-**--amend** flag which instructs git to replace the HEAD commit
+**--amend** flag which instructs git to replace the tip of current branch
 with a new one, based on the current contents of the index.  This
 gives you an opportunity to add files that you forgot to add or
 correct typos in a commit message, prior to pushing the change
