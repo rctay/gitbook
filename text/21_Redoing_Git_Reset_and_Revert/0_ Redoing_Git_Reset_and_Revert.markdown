@@ -19,16 +19,20 @@ In other words, it causes the results of "git diff" and "git diff --cached"
 to both be empty.
 
 If you just want to restore just one file, say your hello.rb, use
-linkgit:git-checkout[1] instead
+linkgit:git-checkout[1] instead.
+
+To restore hello.rb to the version in the index:
 
     $ git checkout -- hello.rb
+
+This way, "git diff hello.rb" returns no differences.
+
+To restore hello.rb to the version in the HEAD revision:
+
     $ git checkout HEAD hello.rb
 
-The first command restores hello.rb to the version in the index,
-so that "git diff hello.rb" returns no differences.  The second command
-will restore hello.rb to the version in the HEAD revision, so
-that both "git diff hello.rb" and "git diff --cached hello.rb"
-return no differences.
+both "git diff hello.rb" and "git diff --cached hello.rb" return no
+differences.
 
 ### Fixing committed mistakes ###
 
